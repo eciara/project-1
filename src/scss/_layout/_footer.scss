@@ -1,0 +1,63 @@
+.footer {
+    background-color: $bg-primary;
+    color: $color-white;
+
+    &__figure {
+        img {
+            @include media-breakpoint-down(lg) {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    &__aside {
+        display: flex;
+        align-items: center;
+        padding: 2rem 0;
+
+        @include media-breakpoint-down(lg) {
+            text-align: center;
+        }
+    }
+
+    &__list {
+        @include media-breakpoint-down(lg) {
+           padding: 1.5rem 0;
+        }
+        a {
+            padding-left: 4px;
+        }
+    }
+
+    &__copy {
+        text-align: left;
+        text-align-last: left;
+        text-transform: uppercase;
+        font-size: $fs-footer-small;
+
+        @include media-breakpoint-down(lg) {
+            text-align: center;
+            text-align-last: center; 
+        }
+        @include media-breakpoint-up(xl) {    
+            font-size: $fs-footer;
+        }
+    }
+
+    &__copyrights {
+        font-size: $fs-copyrights;
+        padding: .75rem 0;
+    }
+
+    &__actions {
+
+        @include media-breakpoint-down(lg) {
+            margin-top: 1.75rem;
+        }
+
+        @include media-breakpoint-between(lg, xl)  {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}

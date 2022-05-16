@@ -1,0 +1,32 @@
+.about-us {
+    padding-bottom: 4rem;
+    
+    &__copy {
+
+        @include media-breakpoint-up(xl) {
+            padding-right: 6.25rem;  
+            padding-top: 10rem;
+        }
+
+        p {
+            text-align-last: left;
+            margin-bottom: 2rem;
+
+            @include media-breakpoint-up(xl) {
+                margin-bottom: 7.25rem;
+            }
+        }
+    }
+    &__aside {
+        @include media-breakpoint-between(md, lg) {
+            --bs-gutter-x: 2rem;
+        }
+    }
+
+    .col-md-4 {
+        @media (max-width: 800px) {
+            flex: 0 0 100%;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+.header {
+    &__baner {
+        position: relative;
+        @include image('bg-baner_mobile.jpg');
+        background-position: bottom;
+        height: 100%;
+        overflow-x: hidden;
+
+        @include media-breakpoint-down(md) {
+            background-position: center;
+        }
+
+        @media (min-width: 480.98px) {
+            @include image('bg-baner_tablet.jpg');
+        }
+
+        @media (min-width: 800.98px) {
+            @include image('bg-baner.jpg');
+        }
+
+        &--subpage {
+            @include image('subbaner_mobile.jpg');
+
+            @media (min-width: 480.98px) {
+                @include image('subbaner_tablet.jpg');
+            }
+
+            @media (min-width: 800.98px) {
+                @include image('subbaner.jpg');
+            }
+
+
+        }
+    }
+
+    &__top {
+        color: $color-white;
+        padding: 1rem 0;
+
+        @include media-breakpoint-up(sm) {
+            padding: 1rem 0;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding: 3rem 0;
+        }
+    }
+
+    &__social {
+        @include media-breakpoint-down(md) {
+            padding-top: 2rem;
+        }
+    }
+    &__list {
+        a {
+            padding-left: 3px;
+        }
+    }
+}

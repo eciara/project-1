@@ -1,0 +1,40 @@
+.contact {
+   
+    @include media-breakpoint-down(xl) {
+        padding-top: 2rem;
+   }
+
+    @include media-breakpoint-down(lg) {
+        padding-top: 1rem;
+   }
+    &__list {
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+
+    &__figure {
+        padding-bottom: 2rem;
+    }
+
+    &__form {
+        @include media-breakpoint-down(md) {
+            padding-top: 2rem;
+        }
+    }
+    &__map {
+        padding: 2.5rem 0 1rem;
+        
+        @include media-breakpoint-up(xl) {
+            padding: 3rem 0 0;
+        }
+    }
+    &__list {
+        a {
+            padding-left: 3px;
+        }
+    }
+}

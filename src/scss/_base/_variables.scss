@@ -1,0 +1,103 @@
+$color-base: #585858;
+$color-primary: #d2c7c1;
+$color-secondary: #b5a399;
+$color-light: #eadfd9;
+$color-white: #fff;
+
+$bg-base: #585858;
+$bg-primary: #d2c7c1;
+$bg-secondary: #b5a399;
+$bg-light: #eadfd9;
+$bg-white: #fff;
+
+// font size
+$fs-icon: 1.68rem;
+$fs-icon-social: 2.75rem;
+$fs-footer: 2.25rem;
+$fs-footer-small: 1.5rem;
+$fs-icon-contact: 2rem;
+$fs-copyrights: 1.15rem;
+$fs-about-copy: 1.25rem;
+$fs-md-menu: 1.25rem;
+$fs-btn-small: 1.5rem;
+$fs-md-contact-top: 1.15rem;
+$fs-medium: 2rem;
+$fs-nav-list: 1.35rem;
+$fs-baner-heading-small: clamp(4rem, #{"-5.4vw + 8rem"}, 4.5rem);
+$fs-baner-heading: clamp(12rem, #{"6.9vw + 6.5rem"}, 16rem);
+$fs-subbaner: clamp(6rem, #{"25.1vw - 14.9rem"}, 15rem);
+
+// Overwrite variables
+$font-family-sans-serif: 'Lato',
+sans-serif;
+$font-family-monospace: 'Great Vibes',
+cursive;
+$font-family-base: $font-family-sans-serif;
+$font-family-code: $font-family-monospace;
+$font-size-base: 1.5rem;
+$small-font-size: 1.15rem;
+$font-weight-base: 300;
+$line-height-base: 1.2;
+$line-height-lg: 1.5;
+$body-color: #585858;
+
+$container-max-widths: (
+    sm: 100%,
+    md: 100%,
+    lg: 90%,
+    xl: 90%,
+    xxl: 90%
+) !default;
+
+$container-padding-x: 0;
+
+$theme-colors: (
+    "primary": $color-primary,
+    "secondary": $color-secondary,
+    "light": $color-secondary,
+    "white": $color-white,
+    "dark": $color-base
+) !default;
+
+$link-color: $color-primary;
+$link-decoration: none;
+$link-hover-color: $color-secondary;
+
+$navbar-padding-y: 3rem;
+$navbar-nav-link-padding-x: 1.5rem;
+$navbar-dark-color: $color-white;
+$navbar-dark-active-color: $color-secondary;
+$navbar-dark-hover-color: $color-secondary;
+$navbar-toggler-padding-x: .5rem;
+$nav-link-padding-y: 0;
+
+$headings-font-family: $font-family-code;
+$headings-color: $color-primary;
+$h1-font-size: 4.5rem; 
+$h2-font-size: 4.5rem;
+$h3-font-size: 4.5rem;
+$h4-font-size: 2.5rem;
+$headings-line-height: 1.2;
+
+$input-font-size:  1.25rem;
+$input-padding-y: .5rem;
+$input-bg: transparent;
+$input-border-width: 1px;
+$input-border-color: $color-secondary; 
+$input-border-radius: 7px;
+$input-btn-padding-y-sm: 1rem;
+$input-focus-color: $body-color;
+$input-focus-bg: $bg-white;
+$input-focus-border-color: $color-secondary;
+//$input-focus-box-shadow: none;
+//$input-focus-color: ;
+$input-focus-box-shadow: 0 0 0 1px rgba(181, 163, 153, .75);
+$btn-focus-box-shadow: 0 0 0 1px rgba(181, 163, 153, .75);
+
+$accordion-padding-y: 1.5rem;
+$accordion-border-color: $color-light;
+$accordion-body-padding-y: 2rem;
+$accordion-body-padding-x: 1.5rem;
+$accordion-button-bg: $bg-white;
+$accordion-button-active-bg: $color-primary;
+$accordion-button-active-color: $bg-white;

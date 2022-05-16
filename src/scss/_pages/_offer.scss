@@ -1,0 +1,11 @@
+.offer {
+    padding: 2rem 0 1rem;   
+
+    @include media-breakpoint-up(lg) {
+        padding: 1rem 0 0;   
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding: 0; 
+    }
+}

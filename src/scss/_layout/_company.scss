@@ -1,0 +1,106 @@
+.company {
+
+    &__body {
+        display: flex;
+        padding-top: 0;
+        align-items: center;
+        @include media-breakpoint-between(md, lg) {
+            padding-top: 3rem;
+
+        }
+        @include media-breakpoint-between(lg, xl) {
+            padding-top: 5rem;
+        }
+
+        &--secondary {
+            @media (min-width: 801px) and (max-width: 991.99px) {
+                margin-top: 3rem;
+            }
+        }
+    }
+
+    &__copy {
+
+        @media (max-width: 800px) {
+            display: flex;
+            flex-direction: column;
+            order: 2;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 660px) and (max-width: 800px) {
+            padding: 2.75rem 0 3rem;
+        }      
+
+        @media (max-width: 650.99px) {
+            padding: 2.75rem .25rem 3rem;
+        }
+
+        @media (max-width: 575.98px) {
+            padding: 2.75rem .75rem 3rem;
+        }
+
+        @media (max-width: 420px){
+             padding: 2.75rem 1rem 3rem;
+        }
+        
+        &--left {
+
+            @media (min-width: 801px) {
+                padding-right: 3rem;
+                padding-left: 2rem;
+            }
+
+            @include media-breakpoint-up(xl) {
+                padding-right: 6.25rem;
+
+            }
+        }
+
+        &--right {
+             @media (max-width: 800px) {
+                padding-bottom: 0;
+            }
+
+            @media (min-width: 801px) {
+                padding-right: 2rem;
+                padding-left: 3rem;
+            }
+
+            @include media-breakpoint-up(xl) {
+                padding-left: 6.25rem;
+            }
+        }
+    }
+
+    &__figure {
+        margin-top: -2rem;
+
+        @media (max-width: 800px) {
+            display: flex;
+            order: 1;
+        }
+        
+        @media (min-width: 768px) {
+             margin-top: -7rem;
+        }
+   
+        @include media-breakpoint-up(xl) {
+            margin-top: -8rem;
+        }
+
+        img {
+            @include media-breakpoint-up(xxl) {
+                width: 100%;
+            }
+        }
+    }
+
+    .col-md-4,
+    .col-md-8 {
+        @media (max-width: 800px) {
+            width: 100%;
+        }
+    }
+}

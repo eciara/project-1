@@ -1,0 +1,53 @@
+.icon {
+    transform: perspective(1px) translateZ(0);
+    transition: all .35s ease;
+    
+    &:hover {
+        transform: scale(0.95);
+    }
+
+    &--contact-top {
+        font-size: $fs-icon;
+        color: $color-primary;
+        padding-right: 0.5rem;
+        @include media-breakpoint-up(md) {
+            padding: 0 .5rem 0 1.5rem;
+        }
+    }
+
+    &--social {
+        font-size: $fs-icon-social;
+        color: $color-white;
+        padding-right: 1.25rem;
+
+        &:hover {
+            color: $color-secondary;
+        }
+
+        @include media-breakpoint-only(md) {
+            font-size: $fs-icon;
+            padding-right: 1rem;
+        }
+    }
+
+    &--contact,
+    &--contact-social {
+        color: $color-secondary;
+    }
+
+    &--contact {
+        font-size: $fs-icon-contact;
+        padding-right: .75rem;
+    }
+
+    &--contact-social {
+        font-size: $fs-icon-social;
+        padding-right: 1rem;
+    }
+
+    &--footer {
+        color: $color-white;
+        font-size: $fs-icon;
+        padding-right: 1rem;
+    }
+}

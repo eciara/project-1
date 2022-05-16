@@ -1,0 +1,47 @@
+// ścieżka do plików img
+@function image-url($name) {
+    $imagesPath: "../images/" !default;
+    @return url(#{$imagesPath}#{$name});
+}
+
+@mixin image($url-image) {
+    background-image: image-url($url-image);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// animacja do dropdown list
+@-webkit-keyframes dropdownMenu {
+    0% {
+        opacity: 0;
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes dropdownMenu {
+
+    0% {
+        opacity: 0;
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
